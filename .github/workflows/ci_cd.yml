@@ -28,6 +28,7 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -r quote_disp/requirements.txt
           python -m pip install -r quote_gen/requirements.txt
+          python -m pip install pytest-flask
       
       - name: Run tests
         run: |
