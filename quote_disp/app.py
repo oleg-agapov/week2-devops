@@ -18,7 +18,7 @@ def home():
 
 @app.route("/get_quote")
 def quote():
-    r = requests.get('http://gen:5000/quote')
+    r = requests.get('http://web1:5000/quote')
     quote = r.text
     print("quote - ", quote)
     return render_template("quote.html", quote=quote)
